@@ -87,12 +87,12 @@
     </div>
 
     <div class="question-block">
-      <p>Q7：性的関心はあるほうだ</p>
+      <p>Q7：手は大きい方だ</p>
       <div class="options">
-        <label><input type="radio" name="q7" value="かなり強い"> かなりある</label>
-        <label><input type="radio" name="q7" value="そこそこ強い"> そこそこある</label>
+        <label><input type="radio" name="q7" value="大きい"> 大きい</label>
+        <label><input type="radio" name="q7" value="そこそこ大きい"> そこそこ</label>
         <label><input type="radio" name="q7" value="普通"> ふつうくらい</label>
-        <label><input type="radio" name="q7" value="ない方"> ない方だ</label>
+        <label><input type="radio" name="q7" value="小さめ"> 小さめだ</label>
       </div>
     </div>
 
@@ -152,7 +152,7 @@ const age = ageInput.value.trim() || '未入力';
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          content: `${age}歳 ニックネーム: ${nickname}\nQ1アウトドアの回答: ${q1Value} Q2考えることの回答: ${q2Value} Q3食べることの回答: ${q3Value} Q4動きながら考えるの回答: ${q4Value} Q5負けず嫌いの回答: ${q5Value} Q6集中力の回答: ${q6Value} Q7性欲の回答: ${q7Value}`
+          content: `${age}歳 ニックネーム: ${nickname}\nQ1アウトドアの回答: ${q1Value} Q2考えることの回答: ${q2Value} Q3食べることの回答: ${q3Value} Q4動きながら考えるの回答: ${q4Value} Q5負けず嫌いの回答: ${q5Value} Q6集中力の回答: ${q6Value} Q7手の大きさ: ${q7Value}`
         })
       }).then(() => {
         window.location.href = 'page2.html';
